@@ -7,7 +7,7 @@ import numpy as np
 # Then change to this directory and type 'python bartender.py'
 
 def main():
-    bot = InterbotixManipulatorXS("wx250", "arm", "gripper")
+    bot = InterbotixManipulatorXS("vx250", "arm", "gripper")
     bot.arm.set_ee_pose_components(x=0.3, z=0.2)
     bot.arm.set_single_joint_position("waist", np.pi/2.0)
     bot.gripper.open()

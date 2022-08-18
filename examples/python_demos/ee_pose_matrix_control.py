@@ -12,7 +12,7 @@ def main():
     T_sd[1,3] = 0
     T_sd[2,3] = 0.2
 
-    bot = InterbotixManipulatorXS("wx250s", "arm", "gripper")
+    bot = InterbotixManipulatorXS("vx250", "arm", "gripper")
     bot.arm.go_to_home_pose()
     bot.arm.set_ee_pose_matrix(T_sd)
     bot.arm.go_to_home_pose()

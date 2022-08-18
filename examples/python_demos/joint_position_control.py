@@ -8,7 +8,7 @@ from interbotix_xs_modules.arm import InterbotixManipulatorXS
 
 def main():
     joint_positions = [-1.0, 0.5 , 0.5, 0, -0.5, 1.57]
-    bot = InterbotixManipulatorXS("wx250s", "arm", "gripper")
+    bot = InterbotixManipulatorXS("vx250", "arm", "gripper")
     bot.arm.go_to_home_pose()
     bot.arm.set_joint_positions(joint_positions)
     bot.arm.go_to_home_pose()

@@ -8,7 +8,7 @@
   <arg name="show_gripper_fingers"              default="true"/>
   <arg name="use_world_frame"                   default="false"/>
   <arg name="external_urdf_loc"                 default=""/>
-  <arg name="use_rviz"                          default="false"/>
+  <arg name="use_rviz"                          default="true"/>
   <arg name="world_name"                        default="$(find interbotix_xsarm_gazebo)/worlds/xsarm_gazebo.world"/>
   <arg name="gui"                               default="true"/>
   <arg name="debug"                             default="false"/>

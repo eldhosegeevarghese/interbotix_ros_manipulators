@@ -5,7 +5,7 @@ from interbotix_xs_modules.arm import InterbotixManipulatorXS
 # Then change to this directory and type 'python ee_pose_components.py'
 
 def main():
-    bot = InterbotixManipulatorXS("wx250", "arm", "gripper")
+    bot = InterbotixManipulatorXS("vx250", "arm", "gripper")
     bot.arm.go_to_home_pose()
     bot.arm.set_ee_pose_components(x=0.2, y=0.1, z=0.2, roll=1.0, pitch=1.5)
     bot.arm.go_to_home_pose()
