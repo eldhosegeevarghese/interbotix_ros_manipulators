@@ -60,3 +60,4 @@ To contribute your own custom X-Series arm in this repo, you will need to do the
 
 ## UPDATE BY ELDHOSE VATTAPPARAMBIL GEEVARGHESE (eldhose.geevarghese2021@my.ntu.ac.uk, eldhosevg07@gmail.com)
 # Simulating and Controlling a Robotic Manipulator for Mobile IoT Sensing for Sustainable Precision Farming Using Robots
+Docker, an open platform for developing, shipping, and executing applications. In the ROS framework, created a workspace to control the Robotic Arm and its End-effector. The Gazebo Simulation Configuration was used to control the robotic arm directly, as well as in conjunction with MoveIt via the Follow Joint Trajectory interface and alone via the Joint Position Controller interface.
