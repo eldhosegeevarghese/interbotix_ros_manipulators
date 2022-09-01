@@ -56,3 +56,7 @@ To contribute your own custom X-Series arm in this repo, you will need to do the
 - [Solomon Wiznitzer](https://github.com/swiz23) - **ROS Engineer**
 - [Luke Schmitt](https://github.com/lsinterbotix) - **Robotics Software Engineer**
 - [Levi Todes](https://github.com/LeTo37) - **CAD Engineer**
+
+
+## UPDATE BY ELDHOSE VATTAPPARAMBIL GEEVARGHESE (eldhose.geevarghese2021@my.ntu.ac.uk, eldhosevg07@gmail.com)
+# Simulating and Controlling a Robotic Manipulator for Mobile IoT Sensing for Sustainable Precision Farming Using Robots
