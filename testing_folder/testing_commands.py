@@ -1,6 +1,8 @@
 from interbotix_xs_modules.arm import InterbotixManipulatorXS
 import numpy as np
 
+# TESTING FILE
+# A file developed for testing purpose.
 # ELDHOSE VATTAPPARAMBIL GEEVARGHESE (N0954952)
 # NOTTINGHAM TRENT UNIVERSITY.
 # "Simulating and Controlling a Robotic Manipulator for Mobile IoT Sensing for Sustainable Precision Farming Using Robots".
@@ -16,21 +18,19 @@ def main():
     bot = InterbotixManipulatorXS("vx250", "arm", "gripper")
     # The ViperX 250 robotic arm from is used in this project.
     bot.arm.set_ee_pose_components(x=0.5, z=-0.16)
-    # Setting coordinates for movements. Arm moving forward to coordinate (x=0.5, z=-0.16). 
-    # define T_sd in terms of the components it represents - specifically the x, y, z, roll, pitch, and yaw of the ‘Body’ frame with respect to the ‘Space’ frame.
-    # (where x, y, and z are in meters, and roll, pitch and yaw are in radians).
+    bot.arm.set_ee_cartesian_trajectory(pitch=1.5) 
     #bot.arm.set_single_joint_position("waist", np.pi/2.0)
-    bot.arm.set_ee_cartesian_trajectory(pitch=1.5)
-    # When specifying a desired pose using the command above, arm will its end-effector to the desired pose in a curved path.
-    # This makes it difficult to perform movements that are ‘orientation-sensitive’ (like carrying a small cup of water without spilling).
-    # To get around this, the set_ee_cartesian_trajectory method is provided.
-    # This method defines a trajectory using a series of waypoints that the end-effector should follow as it travels from its current pose to the desired pose. 
-    bot.arm.set_ee_cartesian_trajectory(x=-0.2, z=-0.05)
-    bot.arm.set_ee_cartesian_trajectory(x=0, z=-0.15)
-    bot.gripper.open()
-    bot.gripper.close()
-    bot.gripper.open()
-    bot.gripper.close()
+    #bot.gripper.open()
+    #bot.arm.set_ee_cartesian_trajectory(x=0, z=-0.005)
+    #bot.arm.set_ee_cartesian_trajectory(pitch=1.5)
+    #bot.arm.set_ee_cartesian_trajectory(x=0.1, z=-0.2)
+    #bot.gripper.close()
+    #bot.arm.set_ee_cartesian_trajectory(x=-0.2, z=-0.05)
+    #bot.arm.set_ee_cartesian_trajectory(x=0, z=-0.15)
+    #bot.gripper.open()
+    #bot.gripper.close()
+    #bot.gripper.open()
+    #bot.gripper.close()
     #bot.arm.set_ee_cartesian_trajectory(pitch=1.5)
     #bot.arm.set_single_joint_position("waist", -np.pi/2.0)
     #bot.arm.set_ee_cartesian_trajectory(pitch=1.5)
@@ -39,8 +39,16 @@ def main():
     #bot.arm.set_ee_cartesian_trajectory(x=0.1, z=-0.16)
     #bot.gripper.open()
     #bot.arm.set_ee_cartesian_trajectory(x=-0.1, z=0.16)
-    #bot.arm.go_to_home_pose()
-    #bot.arm.go_to_sleep_pose()
+    bot.arm.set_ee_cartesian_trajectory(x=-0.2, z=-0.05)
+    bot.arm.set_ee_cartesian_trajectory(x=0, z=-0.15)
+    bot.gripper.open()
+    bot.gripper.close()
+    bot.gripper.open()
+    bot.gripper.close()
+    bot.arm.go_to_home_pose()
+    bot.arm.go_to_sleep_pose()
 
 if __name__=='__main__':
     main()
+
+
