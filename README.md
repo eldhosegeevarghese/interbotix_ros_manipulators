@@ -62,8 +62,8 @@ To contribute your own custom X-Series arm in this repo, you will need to do the
 # Simulating and Controlling a Robotic Manipulator for Mobile IoT Sensing for Sustainable Precision Farming Using Robots
 Docker, an open platform for developing, shipping, and executing applications. In the ROS framework, created a workspace to control the Robotic Arm and its End-effector. The Gazebo Simulation Configuration was used to control the robotic arm directly, as well as in conjunction with MoveIt via the Follow Joint Trajectory interface and alone via the Joint Position Controller interface.
 # Arm Descriptions
-The URDFs and meshes for the Arm is included in this description package. The URDF is a file format used in ROS to define the geometry and structure of robots. Placed the arm over the robot but having trouble finding the correct mesh files for the SUMMIT-XL robot. So, there were concerns with arm balancing and inertial factors. Therefore, a box with the same dimensions (Width, Height and Depth) is employed as the base of the arm in replacement of the robot. The use_world_frame argument is set to false to attach the arm's base link frame to a different frame, which is true by default. Then a box, same dimension as robot is attached to the base_link_frame which is the root link of the arm. 
-x-special/nautilus-clipboard
-copy
-file:///home/eldhose_geevarghese/Desktop/Arm_over_Summit_xl.png
+The URDFs and meshes for the Arm is included in this description package. The URDF is a file format used in ROS to define the geometry and structure of robots. Placed the arm over the robot but having trouble finding the correct mesh files for the SUMMIT-XL robot. So, there were concerns with arm balancing and inertial factors. Therefore, a box with the same dimensions (Width, Height and Depth) is employed as the base of the arm in replacement of the robot. The use_world_frame argument is set to false to attach the arm's base link frame to a different frame, which is true by default. Then a box, same dimension as robot is attached to the base_link_frame which is the root link of the arm.
+![Arm over Summit-XL Robot](file:///home/eldhose_geevarghese/Desktop/Arm_over_Summit_xl.png)
+
+
 
