@@ -88,6 +88,7 @@ When employing Realtime controllers, inertia components of zero (or nearly zero)
 A well-defined controlling approach is required for a system to perform properly. The system has accurate robotic arm motions and allows the user to instruct the robotic arm in specified end-effector orientations. The installation package includes the setup and launch files required to start the arm platform. This includes launching the xs_sdk node, which is in charge of operating the DYNAMIXEL motors on the robot, as well as loading the URDF into the robot description parameter. Essentially, this package is what all 'downstream' ROS packages should refer to get the robot up and running. 
 xsarm_control package builds on top of the xsarm_descriptions and xs_sdk packages. The parameters in there define the desired operating modes for either a group of joints or single joints, and whether they should be torqued on/off at node startup.
 
-![2](htt![ViperX-250 RViz](https://user-images.githubusercontent.com/109370103/189700267-615fefe8-2982-47cc-90c9-3b5eac9f503f.png)
+![ViperX-250 RViz](https://user-images.githubusercontent.com/109370103/189700267-615fefe8-2982-47cc-90c9-3b5eac9f503f.png)
 
-ps://user-images.githubusercontent.com/109370103/189700126-09f7a1ac-02a8-4344-a6b5-e035c3521aa4.png)
+![2](https://user-images.githubusercontent.com/109370103/189700442-3487a505-3c47-4e28-8273-857e801a73c2.png)
+
