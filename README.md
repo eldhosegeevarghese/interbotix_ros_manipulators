@@ -74,6 +74,12 @@ Therefore, a box with the same dimensions (Width, Height and Depth) is employed 
 
 ![Picture1](https://user-images.githubusercontent.com/109370103/189698433-384d99ae-4c68-44c2-9fee-02a729021d7a.jpg)
 
+To make the model simulate properly, different physical properties of the robot must be defined, i.e., the properties that a physics engine like Gazebo would require. 
+Every simulated link element requires an inertial tag. The inertia element specifies the 3x3 rotating inertia matrix. Since it is symmetrical, it can be represented by only six components. The inertia tensor is determined by the object's mass and mass distribution. Assuming equal distribution of mass in the volume of the item and computing the inertia tensor based on the object's form is a fair initial estimate.
+
+![Picture2](https://user-images.githubusercontent.com/109370103/189699435-e9466854-db9a-43a3-9a6b-48f279b2578f.jpg)
+
+![image](https://user-images.githubusercontent.com/109370103/189699645-0fc1ef97-09fd-4d17-823a-d7c1451fa28c.png)
 
 
-
+When employing Realtime controllers, inertia components of zero (or nearly zero) might cause the robot model to collapse unexpectedly, and all links will appear with their origins coinciding with the world origin. Therefore, the box's and arm's physical properties are updated. 
