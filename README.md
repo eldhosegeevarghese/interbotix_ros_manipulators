@@ -99,5 +99,10 @@ The MoveIt Setup Assistant wizard was used to create a MoveIt package for each r
 # PYTHON-ROS INTERFACE:
 To direct an arm to perform desired end-effector poses or to follow Cartesian trajectories. Using Python-Ros interface implemented a system that controls arm from pre-specified actions and parameters.
 
-# robot_manipulation - a ROS node that runs in the background and receives Python API commands and publishes data to various ROS topics as needed. It is not a classic ROS node in the sense that it can’t be launched from a ROS launch file or run from the terminal using a rosrun command. Instead, the Python API module includes a Class that, when created, brings the node to life. At the completion of a program, the object gets destroyed, killing the node.
-For launching the arm, open a terminal and type.
+- **robot_manipulation** - a ROS node that runs in the background and receives Python API commands and publishes data to various ROS topics as needed. It is not a classic ROS node in the sense that it can’t be launched from a ROS launch file or run from the terminal using a rosrun command. Instead, the Python API module includes a Class that, when created, brings the node to life. At the completion of a program, the object gets destroyed, killing the node.
+
+![Picture3](https://user-images.githubusercontent.com/109370103/189701707-ed1386ee-c1d8-4824-b0bc-cf992ee125dd.jpg)
+
+![Picture4](https://user-images.githubusercontent.com/109370103/189701738-02013092-4607-4cc5-be1e-58c750b7cda2.jpg)
+
+![Picture5](https://user-images.githubusercontent.com/109370103/189701800-2c328153-42bc-4be8-adb6-241d8d9fc9b5.jpg)
