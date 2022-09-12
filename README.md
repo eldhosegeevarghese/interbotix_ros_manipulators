@@ -90,5 +90,14 @@ xsarm_control package builds on top of the xsarm_descriptions and xs_sdk package
 
 ![ViperX-250 RViz](https://user-images.githubusercontent.com/109370103/189700267-615fefe8-2982-47cc-90c9-3b5eac9f503f.png)
 
+It includes YAML files that have PID gains optimised for the arm and gripper joints so that ros_control can successfully control the arms. There are two uses for this. It may be used either alone or in combination with MoveIt using the JointPositionController interface or the FollowJointTrajectory interface.
+
+The MoveIt Setup Assistant wizard was used to create a MoveIt package for each robot. ROS controllers effectively receive Joint Trajectory orders from MoveIt (through the FollowJointTrajectoryAction interface) and then publish joint commands to the xs_sdk node at the appropriate time. Currently, just the 'position' data in the Joint Trajectory messages are used since they give the smoothest motion. While this package is only designed to be used with MoveIt, it may potentially be used with any other node that can interact properly with the joint trajectory controller package.
+
 ![2](https://user-images.githubusercontent.com/109370103/189700442-3487a505-3c47-4e28-8273-857e801a73c2.png)
 
+# PYTHON-ROS INTERFACE:
+To direct an arm to perform desired end-effector poses or to follow Cartesian trajectories. Using Python-Ros interface implemented a system that controls arm from pre-specified actions and parameters.
+
+# robot_manipulation - a ROS node that runs in the background and receives Python API commands and publishes data to various ROS topics as needed. It is not a classic ROS node in the sense that it can’t be launched from a ROS launch file or run from the terminal using a rosrun command. Instead, the Python API module includes a Class that, when created, brings the node to life. At the completion of a program, the object gets destroyed, killing the node.
+For launching the arm, open a terminal and type.
