@@ -64,8 +64,6 @@ The idea is to develop a simulated environment to test the control of a robotic 
 # Arm Descriptions
 The URDFs and meshes for the Arm is included in this description package. The URDF is a file format used in ROS to define the geometry and structure of robots. The STL files for robot are kept in the folder under the meshes directory. The Interbotix black.png image is in the meshes directory and this image influences the appearance and texture of the robot. The robot's URDFs are then located in the urdf directory. They are written in xacro format so that users may configure which elements of the URDF are loaded to the parameter server.
 
-![VX250](https://user-images.githubusercontent.com/109370103/189695727-cd0e5fea-e4dc-4744-8e69-be0484241bc2.jpg)
-
 ![summit_xl_gazebo](https://user-images.githubusercontent.com/109370103/189695616-6cfae43f-7bff-413c-99b4-55e6868270cb.png)
 
 Placed the arm over the robot but having trouble finding the correct mesh files for the SUMMIT-XL robot. So, there were concerns with arm balancing and inertial factors.
